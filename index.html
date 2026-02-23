@@ -11,7 +11,6 @@
       
       <a-assets>
         <a-img id="infoPanel" src="./image.png"></a-img>
-        
         <a-asset-item id="myModel" src="./3D.glb"></a-asset-item>
       </a-assets>
 
@@ -19,24 +18,20 @@
 
       <a-entity mindar-image-target="targetIndex: 0">
         
-        <a-entity position="-5 0 0.1">
-
+        <a-entity position="0 0.8 0.1">
             <a-plane color="#000" opacity="0.6" width="1.2" height="0.8" position="0 0 0"></a-plane>
             <a-plane color="#00ffff" width="1.25" height="0.85" position="0 0 -0.01" material="wireframe: true; wireframeLinewidth: 2"></a-plane>
             <a-image src="#infoPanel" width="1" height="0.6" position="0 0 0.01"></a-image>
+        </a-entity>
 
-            <a-entity 
-              gltf-model="#myModel" 
-              position="0 0 0.1" 
-              scale="0.8 0.8 0.8" 
-              animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear">
-            </a-entity>
-
+        <a-entity 
+          gltf-model="#myModel" 
+          position="-1 0 0.1" 
+          scale="0.8 0.8 0.8" 
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 5000; easing: linear">
         </a-entity>
 
       </a-entity>
     </a-scene>
   </body>
 </html>
-
-
